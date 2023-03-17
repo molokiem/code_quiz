@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz-Play</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz-Play</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/game.css"> -->
 
 </head>
+
 <body>
-    <div class = "container">
-        <div id="game" class="justify-center flex column">
-          <h2 id="question">What is the answer to Question One?</h2> 
-          <div class="choice-container">
-            <p class="choice-prefix">A</p>
-            <p class="choice-text" data-number="1">Choice 1</p>
-          </div> 
-          <div class="choice-container">
-            <p class="choice-prefix">B</p>
-            <p class="choice-text" data-number="2">Choice 2</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-prefix">C</p>
-            <p class="choice-text" data-number="3">Choice 3</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-prefix">D</p>
-            <p class="choice-text" data-number="4">Choice 4</p>
-          </div>
-        </div>
+  <div class="container">
+    <div id="game" class="game-display gamebox flex-column">
+      
+      <h2 id="questionDisplay"></h2>
+      
+      <div class="choices">
+          <p><button onclick="checkAnswer(0)" id="btnA"></button></p>
+          <p><button onclick="checkAnswer(1)" id="btnB"></button></p>
+          <p><button onclick="checkAnswer(2)" id="btnC"></button></p>
+          <p><button onclick="checkAnswer(3)" id="btnD"></button></p>
+      </div>
+
+      <!-- Timer Display -->
+      <h3 id="timer-display"></h3>
+
     </div>
-    <script src="game.js"></script>
+  </div>
+  <script src="assets/js/games.js"></script>
+
 </body>
+
 </html>

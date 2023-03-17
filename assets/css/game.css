@@ -1,0 +1,24 @@
+var questions = [
+    {
+        question: 'What does the acronym DOM stand for?',
+        choices: ['Document Object Model', 'Document Original Model', 'Document Object Mode', 'None of the Above'],
+        answer: 'Document Object Model'
+    },
+    {
+        question: 'Which syntax is used to call a function?',
+        choices: ['()', '{}', '[]', '{()}'],
+        answer: '()'
+    },
+    {
+        question: 'What are some primative values?',
+        choices: ['Number', 'Boolean', 'Undefined', 'All of the above'],
+        answer: 'All of the above'
+    },
+    {
+        question: 'What would you see in JavaScript file?',
+        choices: ['HTML', 'margin', 'console.log', 'All of the above'],
+        answer: 'console.log'
+    },
+]
+
+
